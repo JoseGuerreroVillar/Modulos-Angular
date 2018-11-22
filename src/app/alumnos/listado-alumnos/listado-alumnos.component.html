@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-6">
+    <button class="btn btn-success" (click)="nuevo()">Nuevo Alumno</button>
+    <table class="table table-striped tablehover">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Dni</th>
+          <th>Carrera</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let alumno of listaAlumnos; let indice = index"></tr>
+        <td>{{alumno.nombre}}</td>
+        <td>{{alumno.dni}}</td>
+        <td>{{alumno.carrera}}</td>
+        <td>
+          <button class="btn btn-warning" (click)="editar(indice)">Editar</button>
+          <button class="btn btn-danger" (click)="eliminar(indice)">Eliminar</button>
+        </td>
+      </tbody>
+    </table>
+  </div>
+</div>
