@@ -4,9 +4,10 @@ import { FormsModule } from "@angular/forms";
 import { ListadoAlumnosComponent } from './listado-alumnos/listado-alumnos.component';
 import { AlumnosRoutingModule } from './alumnos-routing.module';
 import { NuevoAlumnosComponent } from './nuevo-alumnos/nuevo-alumnos.component';
+import { EdicionAlumnosComponent } from './edicion-alumnos/edicion-alumnos.component';
 
 @NgModule({
-  declarations: [ListadoAlumnosComponent, NuevoAlumnosComponent],
+  declarations: [ListadoAlumnosComponent, NuevoAlumnosComponent, EdicionAlumnosComponent],
   imports: [
     CommonModule,
     AlumnosRoutingModule,

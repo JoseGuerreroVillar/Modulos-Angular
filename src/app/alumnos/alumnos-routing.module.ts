@@ -1,9 +1,14 @@
 import { NgModule } from "@angular/core";
 import { ListadoAlumnosComponent } from "./listado-alumnos/listado-alumnos.component";
 import { RouterModule, Route } from "@angular/router";
+import { NuevoAlumnosComponent } from "./nuevo-alumnos/nuevo-alumnos.component";
+import { AlumnosService } from "../services/alumnos.service";
 
 const rutas: Route[] = [
-    {path: "", component: ListadoAlumnosComponent}
+    {path: "", component: ListadoAlumnosComponent, children: [
+        {path: "nuevo", component: NuevoAlumnosComponent}
+    ]},
+    
 ]
 
 @NgModule({

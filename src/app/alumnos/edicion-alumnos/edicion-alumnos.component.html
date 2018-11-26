@@ -1,0 +1,14 @@
+<form>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Nombre" [(ngModel)]="alumno.nombre" name="nombre">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Dni" [(ngModel)]="alumno.dni" name="dni">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Carrera" [(ngModel)]="alumno.carrera" name="carrera">
+  </div>
+  <div class="form-group">
+    <button class="btn btn-success" type="button" (click)="editar()">Modificar</button>
+  </div>
+</form>
