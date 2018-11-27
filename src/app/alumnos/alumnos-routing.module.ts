@@ -3,10 +3,12 @@ import { ListadoAlumnosComponent } from "./listado-alumnos/listado-alumnos.compo
 import { RouterModule, Route } from "@angular/router";
 import { NuevoAlumnosComponent } from "./nuevo-alumnos/nuevo-alumnos.component";
 import { AlumnosService } from "../services/alumnos.service";
+import { EdicionAlumnosComponent } from "./edicion-alumnos/edicion-alumnos.component";
 
 const rutas: Route[] = [
     {path: "", component: ListadoAlumnosComponent, children: [
-        {path: "nuevo", component: NuevoAlumnosComponent}
+        {path: "nuevo", component: NuevoAlumnosComponent},
+        {path: "edicion", component: EdicionAlumnosComponent}
     ]},
     
 ]

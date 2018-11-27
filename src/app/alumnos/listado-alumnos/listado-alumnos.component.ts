@@ -34,4 +34,8 @@ export class ListadoAlumnosComponent implements OnInit {
     })
   }
 
+  editar(indice: number) {
+    this.ruteador.navigate(["alumnos/edicion",indice])
+  }
+
 }
